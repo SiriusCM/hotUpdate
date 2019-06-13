@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="hot:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/hot_jar</output-path>
+    <root id="archive" name="hot.jar">
+      <element id="module-output" name="hot" />
+    </root>
+  </artifact>
+</component>
