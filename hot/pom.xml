@@ -2,14 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>hotfix</artifactId>
-        <groupId>org.sirius</groupId>
-        <version>1.0</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>agent</artifactId>
+    <groupId>org.sirius</groupId>
+    <artifactId>hot</artifactId>
+    <version>1.0</version>
+
+    <parent>
+        <groupId>org.sirius</groupId>
+        <artifactId>hotfix</artifactId>
+        <version>1.0</version>
+    </parent>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -29,7 +32,7 @@
                         </manifest>
                         <manifestEntries>
                             <Agent-Class>
-                                org.sirius.hotfix.agent.Main
+                                org.sirius.hotfix.hot.Main
                             </Agent-Class>
                             <Can-Redefine-Classes>true</Can-Redefine-Classes>
                             <Can-Retransform-Classes>true</Can-Retransform-Classes>
@@ -39,5 +42,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
